@@ -1,0 +1,29 @@
+yarn init - y // cria o projeto e o arquivo package.json
+
+yarn add express //Instalar Biblioteca Express(ajuda na criação das rotas)
+
+yarn add nodemon -D //Biblioteca responsavel por atualizar a página de forma automatica
+
+yarn nodemon index.js //executa o app dinamicamente 
+
+inserir em package,josn:
+ "scripts": {
+"dev" : "nodemon index.js"
+  },
+  para a execução automatica para cada vez que for atualizado o seu app
+
+  yarn add mongoose //biblioteca que possibilita a conexão entre a aplicação e a base de dados
+
+  //Métodos HTTP: GET, POST, PUT, DELETE
+
+//Tipos de parâmetros:
+
+// Query Params: request.qry (Filtros, ordernação, páginação,  ...)
+// Route  Params: request.params (Identificar um recurso na alteraçãom ou remolçao)
+// Body: request.body (Dados para criação ou alteração de um registro)
+
+//MongoDB (Não-relacional)
+
+yarn add axios // faz chamadas para outras APIs
+
+´´ // crase por volta das strings consegue fazer com que vc chame variaveis dentro da string com o template strings
