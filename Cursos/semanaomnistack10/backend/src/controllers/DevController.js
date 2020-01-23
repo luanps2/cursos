@@ -8,6 +8,7 @@ module.exports = {
     async index(request, response) {
         const devs = await Dev.find();
 
+        console.log(devs.github_username)
         return response.json(devs);
     },
 
@@ -20,8 +21,8 @@ module.exports = {
             const apiResponse = await axios.get(`http://api.github.com/users/${github_username}`);
 
             const { name = login, avatar_url, bio } = apiResponse.data;
-
-            const techsArray = parseStringAsArray(techs);
+            console.log(techs + "Dev controller")
+            //const techsArray = parseStringAsArray(techs);
 
             const location = {
                 type: 'Point',
