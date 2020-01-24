@@ -40,5 +40,16 @@ module.exports = {
         }
 
         return response.json(dev);
-    }
-}
+    },
+
+    async update(){
+
+    },
+
+    async destroy(request, response){
+
+        let dev = await Dev.findOne({ github_username });
+        console.log(devs.github_username)
+        return response.json(devs);
+    },
+};
